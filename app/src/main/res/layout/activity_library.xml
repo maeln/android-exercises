@@ -6,4 +6,65 @@
     android:layout_height="match_parent"
     tools:context=".Library">
 
+    <TextView
+        android:id="@+id/upup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/left_text"
+        android:background="@color/red"
+        android:padding="5dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/below_left_text"
+        android:background="@color/purple"
+        android:padding="5dp"
+        android:layout_below="@+id/upup"
+        android:layout_alignLeft="@+id/upup"
+        android:layout_toLeftOf="@+id/rightt"/>
+
+    <TextView
+        android:id="@+id/rightt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/right_text"
+        android:background="@color/red"
+        android:padding="5dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_margin="10dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="@string/center_text"
+        android:background="@color/deep_purple"
+        android:padding="5dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/above_bottom_center_text"
+        android:background="@color/blue"
+        android:padding="5dp"
+        android:layout_centerInParent="true"
+        android:layout_above="@+id/oneone"/>
+
+    <TextView
+        android:id="@+id/oneone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/bottom_center_text"
+        android:background="@color/indigo"
+        android:padding="5dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerInParent="true"
+        android:layout_marginBottom="10dp"/>
+
 </RelativeLayout>
