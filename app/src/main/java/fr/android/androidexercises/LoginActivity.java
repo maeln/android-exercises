@@ -28,9 +28,13 @@ public class LoginActivity extends AppCompatActivity {
         findViewById(R.id.loginButton).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                presenter.checkCredentials(passwordEdit.getText().toString());
+                clicky();
             }
         });
+    }
+
+    private void clicky() {
+        presenter.checkCredentials(passwordEdit.getText().toString());
     }
 
     @Override
