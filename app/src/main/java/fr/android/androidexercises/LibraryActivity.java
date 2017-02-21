@@ -10,11 +10,19 @@ public class LibraryActivity extends AppCompatActivity implements Step0Fragment.
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_library);
         // TODO replace Step0Fragment in containerFrameLayout
+        if(savedInstanceState == null) {
+            getSupportFragmentManager().beginTransaction()
+                    .replace(R.id.containerFrameLayout, new Step0Fragment(), "Ah!")
+                    .commit();
+        }
     }
 
     @Override
     public void onNext() {
         // TODO replace Step1Fragment in containerFrameLayout
+        getSupportFragmentManager().beginTransaction()
+                .replace(R.id.containerFrameLayout, new Step1Fragment(), "Oh!")
+                .addToBackStack("Ah!")
+                .commit();
     }
-
 }
